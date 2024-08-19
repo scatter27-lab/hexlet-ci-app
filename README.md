@@ -1,3 +1,4 @@
+[![NiceTry](https://github.com/scatter27-lab/hexlet-ci-app/actions/workflows/first.yml/badge.svg)](https://github.com/scatter27-lab/hexlet-ci-app/actions/workflows/first.yml)
 # Example app for CI Hexlet course
 
 Starting boilerplate of [Strapi](https://strapi.io/) application
