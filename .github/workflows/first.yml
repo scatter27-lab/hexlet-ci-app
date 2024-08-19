@@ -1,4 +1,10 @@
-test:
-  script: make setup
-  script: make test
-  script: make lint
+name: NiceTry
+on: push
+jobs:
+  build:
+  runs-on: ubuntu-latest
+  steps:
+    test:
+      - run: make setup
+      - script: make test
+      - script: make lint
