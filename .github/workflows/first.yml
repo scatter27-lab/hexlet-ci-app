@@ -8,12 +8,8 @@ jobs:
       - run: make setup
       - run: make test
       - run: make lint
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 14
-      - name: install Snyk CLI
-        run: npm install -g snyk
-      - name: run Snyk Open Source Test
-        run: snyk test
-      - name: run Snyk Code Test
-        run: snyk code test
+      - uses: actions/checkout@master
+      - name: Run Snyk to check for vulnerabilities
+        uses: snyk/actions/node@master
+        env:
+          SNYK_TOKEN: ${{ secrets.d366227a-39d2-4a6a-a590-6f30259aad20 }}
